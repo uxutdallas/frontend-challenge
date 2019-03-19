@@ -57,6 +57,9 @@ If the weather is `clear` and it is after 6:00 PM something similar to the follo
 
 ![Clear Night](https://raw.githubusercontent.com/HackToHelpUTD/frontend-challenge/master/.github/clear-night.png)
 
+### Other Details
+You may change other parts of the code if you need to. Be prepared to explain your changes.
+
 ### Submission
 You can either download a zip file and edit that or fork the repo and make your changes there. Whichever way you decide to proceed, make sure to bring in your laptop on the day of your scheduled interview to show us your final result and be prepared to talk through the choices you made. See you soon!
 
