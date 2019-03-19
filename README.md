@@ -47,6 +47,16 @@ In the API response there is an object called `weather`. It follows the followin
 
 The key labeled `main` inside the `weather` object is what is being used to determine the icon that will be displayed to the user. Currently the the `main` value is equal to `Clear` the following is displayed.
 
+![Clear Day](https://raw.githubusercontent.com/HackToHelpUTD/frontend-challenge/master/.github/clear-day.png)
+
+The image that shows for clear remains the same even if it is night hour. **Your task is to update the code in such a way that the image changes to a moon after 6:00 PM (local to user).**
+
+The icon that you must use is located under `src/imgs/weather-icons` and is labeled `night.svg`
+
+If the weather is `clear` and it is after 6:00 PM something similar to the following should be displayed to the user.
+
+![Clear Night](https://raw.githubusercontent.com/HackToHelpUTD/frontend-challenge/master/.github/clear-night.png)
+
 ### Submission
 You can either download a zip file and edit that or fork the repo and make your changes there. Whichever way you decide to proceed, make sure to bring in your laptop on the day of your scheduled interview to show us your final result and be prepared to talk through the choices you made. See you soon!
 
