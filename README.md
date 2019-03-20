@@ -1,5 +1,5 @@
 ## What's the Weather Like? | Frontend Challenge
-This fronend challange is for the Hack to Help Frontend Developer Commitee recruitment. Anyone applying to be a frontend developer for Hack to Help must complete this challenge.
+This frontend challange is for the Hack to Help Frontend Developer Commitee recruitment. Anyone applying to be a frontend developer for Hack to Help must complete this challenge.
 
 ### Application Overview
 The application that you are required to modify is a weather application that tells the user the current weather based on his/her location. The application gets the geolocation of the user and uses the [OpenWeatherMap](https://openweathermap.org/current) "Current Weather API" to get the current weather by sending over the user's geographical coordinates as parameters to the API call.
