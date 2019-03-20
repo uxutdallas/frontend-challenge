@@ -40,7 +40,7 @@ The code and assets follow the following file structure
 ------------ main.js
 ```
 
-### Challenge #1
+### Challenge
 In the API response there is an object called `weather`. It follows the following formatting.
 
 ```
