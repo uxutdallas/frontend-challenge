@@ -22,6 +22,8 @@ The response looks similar to below.
 
 Parts of this response are parsed and sent over to be displayed to the user. The code responsible for doing this can be found in `src/js/main.js`.
 
+**The API has been shown to deliver pain stakingly slow results...be patient with the application.**
+
 #### Code & Assets
 The code and assets follow the following file structure
 
