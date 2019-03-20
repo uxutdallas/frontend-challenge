@@ -41,6 +41,9 @@ The code and assets follow the following file structure
 ```
 
 ### Challenge
+
+*Always use best practices!!*
+
 In the API response there is an object called `weather`. It follows the following formatting.
 
 ```
