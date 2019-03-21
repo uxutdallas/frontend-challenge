@@ -1,5 +1,5 @@
 ## What's the Weather Like? | Frontend Challenge
-This frontend challange is for the Hack to Help Frontend Developer Commitee recruitment. Anyone applying to be a frontend developer for Hack to Help must complete this challenge.
+This frontend challenge is for the Hack to Help Frontend Developer Committee recruitment. Anyone applying to be a frontend developer for Hack to Help must complete this challenge.
 
 ### Application Overview
 The application that you are required to modify is a weather application that tells the user the current weather based on his/her location. The application gets the geolocation of the user and uses the [OpenWeatherMap](https://openweathermap.org/current) "Current Weather API" to get the current weather by sending over the user's geographical coordinates as parameters to the API call.
@@ -22,7 +22,7 @@ The response looks similar to below.
 
 Parts of this response are parsed and sent over to be displayed to the user. The code responsible for doing this can be found in `src/js/main.js`.
 
-**The API has been shown to deliver pain stakingly slow results...be patient with the application.**
+**The API has been shown to deliver painstakingly slow results...be patient with the application.**
 
 #### Code & Assets
 The code and assets follow the following file structure
@@ -44,17 +44,17 @@ The code and assets follow the following file structure
 
 *Always use best practices!!*
 
-In the API response there is an object called `weather`. It follows the following formatting.
+In the API response, there is an object called `weather`. It follows the following formatting.
 
 ```
 "weather":[{"id":804,"main":"clouds","description":"overcast clouds","icon":"04n"}],
 ```
 
-The key labeled `main` inside the `weather` object is what is being used to determine the icon that will be displayed to the user. Currently the the `main` value is equal to `Clear` the following is displayed.
+The key labeled `main` inside the `weather` object is what is being used to determine the icon that will be displayed to the user. Currently when the `main` value is equal to `Clear` the following is displayed.
 
 ![Clear Day](https://raw.githubusercontent.com/HackToHelpUTD/frontend-challenge/master/.github/clear-day.png)
 
-The image that shows for clear remains the same even if it is night hour. **Your task is to update the code in such a way that the image changes to a moon after 6:00 PM (local to user).**
+The image that shows for clear remains the same even if it is night hour. **Your task is to update the code in such a way that the image changes to a moon after 6:00 PM (local to the user).**
 
 The icon that you must use is located under `src/imgs/weather-icons` and is labeled `night.svg`
 
