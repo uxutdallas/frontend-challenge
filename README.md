@@ -54,7 +54,7 @@ The key labeled `main` inside the `weather` object is what is being used to dete
 
 ![Clear Day](https://raw.githubusercontent.com/HackToHelpUTD/frontend-challenge/master/.github/clear-day.png)
 
-The image that shows for clear remains the same even if it is night hour. **Your task is to update the code in such a way that the image changes to a moon after 6:00 PM (local to the user).**
+The image that shows for clear remains the same even if it is night hour. **Your task is to update the code in such a way that the image changes to a moon after 6:00 PM and before 6:00 AM (local to the user).**
 
 The icon that you must use is located under `src/imgs/weather-icons` and is labeled `night.svg`
 
