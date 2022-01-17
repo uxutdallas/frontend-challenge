@@ -1,5 +1,5 @@
 ## What's the Weather Like? | Frontend Challenge
-This frontend challenge is for The UX Club Frontend Developer Committee recruitment. Anyone applying to be a web developer for Hack to Help must complete this challenge.
+This frontend challenge is for The UX Club Frontend Developer Committee recruitment. Anyone applying to be a web developer for The UX Club must complete this challenge.
 
 ### Application Overview
 The application that you are required to modify is a weather application that tells the user the current weather based on his/her location. The application gets the geolocation of the user and uses the [OpenWeatherMap](https://openweathermap.org/current) "Current Weather API" to get the current weather by sending over the user's geographical coordinates as parameters to the API call.
@@ -66,7 +66,7 @@ If the weather is `clear` and it is after 6:00 PM something similar to the follo
 You may change other parts of the code if you need to. Be prepared to explain your changes.
 
 ### Submission
-You can either download a zip file and edit that or fork the repo and make your changes there. Whichever way you decide to proceed, make sure to bring in your laptop on the day of your scheduled interview to show us your final result and be prepared to talk through the choices you made. See you soon!
+You can either download a zip file and edit that or fork the repo and make your changes there. Whichever way you decide to proceed, make sure you have access to it on the day of your scheduled interview to show us your final result and be prepared to talk through the choices you made. See you soon!
 
 ### Questions? Concerns?
 Email us at [uxutdallas@gmail.com](mailto:uxutdallas@gmail.com).
