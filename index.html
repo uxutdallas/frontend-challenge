@@ -4,8 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="src/css/style.css">
-  <script src="src/js/main.js"></script>
+  <script src="src/js/main.js">
+  </script>
+  <script>
+    //This will choose the CSS based on the time.
+    //If the time is between 6 am and 6 pm inclusive, a light blue background will be shown.
+    //Else, a black background will be shown to signify nighttime.
+    function getStyle()
+    {
+      var hours = new Date().getHours();
+      var minutes = new Date().getMinutes();
+      var seconds = new Date().getSeconds();
+      var time = "";
+      //When combining the strings of hours, minutes, and seconds together, it can sometimes result into times like 2:6:3, which would be considered a later(greater) time than times such as 12:22:33
+      //If the hour time is less than 10, add string 0 to time
+      if(hours < 10)
+        time += "0";
+      //Add the current hour and colon to time
+        time += hours + ":";
+      //If the minute time is less than 10, add string 0 to time
+      if(minutes < 10)
+        time += "0";
+      //Add the current minute and colon to time
+      time += minutes + ":";
+      //If the seconds number is less than 10, add string 0 to time
+      if(seconds < 10)
+        time += "0";
+      //Add the current second and colon to time
+      time += seconds;
+      if(time >= '06:00:00' && time <= '18:00:00')
+        document.write("<link rel='stylesheet' href='src/css/style.css'>");
+      else
+        document.write("<link rel='stylesheet' href='src/css/night.css'>");
+    }
+    getStyle();
+  </script>
   <title>What's the weather? | Hack to Help Frontend Challenge</title>
 </head>
 <body>
