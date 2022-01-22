@@ -41,22 +41,31 @@ function init() {
     return Math.round(f_unit);
   }
   
+  //Get the current time on a day
   function getCurrentTime(){
     var curDate = new Date();
     var hours = curDate.getHours();
     var minutes = curDate.getMinutes();
     var seconds = curDate.getSeconds();
     var time = "";
+    //When combining the strings of hours, minutes, and seconds together, it can sometimes result into times like 2:6:3, which would be considered a later(greater) time than times such as 12:22:33
+    //If the hour time is less than 10, add string 0 to time
     if(hours < 10)
       time += "0";
+    //Add the current hour and colon to time
     time += hours + ":";
+    //If the minute time is less than 10, add string 0 to time
     if(minutes < 10)
       time += "0";
-    time += minutes + ":";
+    //Add the current minute and colon to time
+      time += minutes + ":";
+    //If the seconds number is less than 10, add string 0 to time
     if(seconds < 10)
       time += "0";
-    time += seconds;
+    //Add the current second and colon to time
+      time += seconds;
 
+    //Return time
     return time;
   }
 
@@ -69,10 +78,12 @@ function init() {
     name_el.innerHTML = name;
     country_el.innerHTML = country;
     temp_el.innerHTML = temp + '&#8457;';
-    //alert(status.toLowerCase());
+    //Get the current time
     var time = getCurrentTime();
-    //time = '05:59';
-    //alert(time);
+    
+    //18:00:00 is 6:00:00 pm. Anytime after 6:00:00pm and before 6:00:00am is considered nighttime.
+    //If the weather is clear DURING the night, a moon will be displayed.
+    //Else, the image of the current weather status will be displayed
     if(status.toLowerCase() == 'clear' && (time > '18:00:00' || time < '06:00:00'))
       img_el.src = '/src/imgs/weather-icons/night.svg';
     else

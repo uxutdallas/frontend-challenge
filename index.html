@@ -16,14 +16,21 @@
       var minutes = new Date().getMinutes();
       var seconds = new Date().getSeconds();
       var time = "";
+      //When combining the strings of hours, minutes, and seconds together, it can sometimes result into times like 2:6:3, which would be considered a later(greater) time than times such as 12:22:33
+      //If the hour time is less than 10, add string 0 to time
       if(hours < 10)
         time += "0";
-      time += hours + ":";
+      //Add the current hour and colon to time
+        time += hours + ":";
+      //If the minute time is less than 10, add string 0 to time
       if(minutes < 10)
         time += "0";
+      //Add the current minute and colon to time
       time += minutes + ":";
+      //If the seconds number is less than 10, add string 0 to time
       if(seconds < 10)
         time += "0";
+      //Add the current second and colon to time
       time += seconds;
       if(time >= '06:00:00' && time <= '18:00:00')
         document.write("<link rel='stylesheet' href='src/css/style.css'>");
