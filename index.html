@@ -7,6 +7,9 @@
   <script src="src/js/main.js">
   </script>
   <script>
+    //This will choose the CSS based on the time.
+    //If the time is between 6 am and 6 pm inclusive, a light blue background will be shown.
+    //Else, a black background will be shown to signify nighttime.
     function getStyle()
     {
       var hours = new Date().getHours();
